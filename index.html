@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/dracula.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1 class="r-fit-text">Maps!</h1>
+					<h5 class="r-fit-text">Kevin Dyke, Maps and Spatial Data Curator, Associate Professor, Oklahoma State University</h5>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						A little background 
+					</textarea>
+					<aside class="notes">
+						-Maps as part of Documents
+						-John Phillips and the serial set
+					</aside>
+				</section>				
+				
+				<section>
+
+						<section data-markdown>
+							<textarea data-template>
+								Spatial data as an umbrella term.
+							</textarea>
+						</section>
+						<section data-markdown>
+							<textarea data-template>
+								![An image of an umbrella labeled as Spatial Data, with the words Maps, GIS, vector, raster, scanned, and digital beneath it.](spatial_umbrella.png)
+							</textarea>
+						</section>
+						
+						<section>
+								<h1 class='r-fit-text'>GIS data</h1>
+						</section>
+						
+						<section data-markdown>
+							<textarea data-template>
+								# Vector
+								![points, lines, and polygons](pts_lines_polys.png)
+							</textarea>
+						</section>
+						
+						<section>
+								<h1>Raster</h1>
+								<div class="r-stack">
+									<img class="fragment fade-out" data-fragment-index="0" alt="aerial photography" src='aerial.png'/> 								
+									<img class="fragment current-visible" data-fragment-index="0" alt="elevation image" src='elevation.jpg'/>
+									<img class="fragment" alt="land cover grid" src='landcover.jpg'/>
+								</div>
+						</section>
+
+						<section>
+							<img alt="layers of information sandwiched on each other to represent reality" src="layers.jpg" width="480"/>
+						</section>
+						
+						<section>
+								<h2>maps</h2>
+								<div class="r-stack">
+									<div class="fragment current-visible">
+										<img alt="picture of a long ribbon map" src='map2.jpg' width="405"/> 								
+										<img alt="another picture of a long ribbon map" src='map1.jpg' width="405"/>
+									</div>
+									<img class="fragment fade-in-then-out" alt="WPA map" src='wpa.jpg' width="605"/>
+									<img class="fragment fade-in" alt="topographic map" src='topo.jpg' width="505"/>
+								
+								</div>
+						</section>
+
+				</section>
+				
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							Spatial data is an indelible feature of government documents. Thanks largely to a number of heavy hitting agencies.
+						</textarea>
+					</section>
+					<section>
+						<h1>USGS</h1>
+					</section>	
+					<section>
+						<h1>Census Bureau</h1>
+					</section>
+					<section>
+						<h1>Bureau of Land Management</h1>
+					</section>
+				</section>
+
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							# USGS
+							#### <!-- .element: class="fragment" -->The ones you can blame for all those topographic maps.
+						</textarea>
+					</section>
+					<section>
+						<h1 class="r-fit-text">
+							Kidding!
+						</h1>
+					</section>
+					<section data-background-iframe="https://www.usgs.gov/" 
+							 data-background-interactive>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							For many dedicated map libraries (including my own), USGS publications dominate.
+						</textarea>
+					</section>
+					<section>
+						USGS topos make appealing candidates for weeding.
+					</section>
+
+					<section>
+						<h2>TopoView</h2>
+						<a href="https://ngmdb.usgs.gov/topoview/">
+							<h3>https://ngmdb.usgs.gov/topoview/</h3>
+						</a>
+					</section>
+					
+					<section>
+						<h2>USGS Earth Explorer	</h2>
+						<a href="https://earthexplorer.usgs.gov/">
+							
+							<h3>https://earthexplorer.usgs.gov/</h3>
+						</a>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Census data</h2>
+						<img src="US-Census-TIGERLogo.svg" width="400"></img>
+					</section>
+					<section>
+						<h2>NHGIS</h2>
+						<a href="https://www.nhgis.org/">
+							<h3>https://www.nhgis.org/</h3>
+						</a>
+					</section>
+				</section>
+
+				<section>
+
+					<section>
+						<h2>Bureau of Land Management</h2>
+					</section>
+					<section>
+						<h3>Deciphering the Public Land Survey</h3>
+						<img class="r-stretch" alt="Breakdown of land description using the Public Land Survey System in the United States" src="plss.png" width="700"/>
+					</section>
+					<section>
+						<h2>General Land Office Records</h2>
+						<a href="https://glorecords.blm.gov/default.aspx">
+							<h3>https://glorecords.blm.gov/default.aspx</h3>
+						</a>
+					</section>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						## Further reading
+						Care and Feeding of Maps: Tips for Managing Your Map Collection - Selected Resources
+						http://hdl.handle.net/11213/11237
+
+						
+					</textarea>
+				</section>
+				
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
